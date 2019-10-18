@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: sans-serif;
+    }
+
+    div {
+      width: 220px;
+      height: 72px;
+      padding: 20px;
+      margin: 10px;
+      line-height: 2;
+      background-color: yellow;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .a {
+      border: 2px solid;
+      border-radius: 10px;
+    }
+
+    .b {
+      border: 2px solid;
+      border-radius: 20px 10px 50px 0;
+    }
+
+    .c {
+      border: 2px solid;
+      border-radius: 10px 30px / 20px 40px;
+    }
+
+    .d {
+      border: 2px solid;
+      border-radius: 110px / 36px;
+      border-radius: 50% / 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="a">边框圆角</div>
+  <div class="b">不对称边框圆角</div>
+  <div class="c">椭圆形边框圆角</div>
+  <div class="d">椭圆形</div>
+</body>
+
+</html>

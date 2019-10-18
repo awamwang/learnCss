@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    p {
+      width: 400px;
+      height: 2.5em;
+      padding: 1em 1em 1em 1em;
+      border: 1px solid black;
+    }
+
+    .autoscroll {
+      overflow: auto;
+    }
+
+    .clipped {
+      overflow: hidden;
+    }
+
+    .default {
+      overflow: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>auto</h2>
+  <p class="autoscroll">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris tempus turpis id ante mollis dignissim. Nam sed
+    dolor non tortor lacinia lobortis id dapibus nunc. Praesent
+    iaculis tincidunt augue. Integer efficitur sem eget risus
+    cursus, ornare venenatis augue hendrerit. Praesent non elit
+    metus. Morbi vel sodales ligula.
+  </p>
+
+  <h2>hidden</h2>
+  <p class="clipped">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris tempus turpis id ante mollis dignissim. Nam sed
+    dolor non tortor lacinia lobortis id dapibus nunc. Praesent
+    iaculis tincidunt augue. Integer efficitur sem eget risus
+    cursus, ornare venenatis augue hendrerit. Praesent non elit
+    metus. Morbi vel sodales ligula.
+  </p>
+
+  <h2>visible</h2>
+  <p class="default">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris tempus turpis id ante mollis dignissim. Nam sed
+    dolor non tortor lacinia lobortis id dapibus nunc. Praesent
+    iaculis tincidunt augue. Integer efficitur sem eget risus
+    cursus, ornare venenatis augue hendrerit. Praesent non elit
+    metus. Morbi vel sodales ligula.
+  </p>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      border: 1px solid;
+      width: 500px;
+      height: 900px;
+    }
+
+    .none {
+      display: none;
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+
+    .show1:hover>.none {
+      display: block;
+    }
+
+    .show2:hover>.hide {
+      visibility: initial;
+    }
+
+    img {
+      width: 500px;
+      height: 300px;
+    }
+
+    .bg {
+      height: 300px;
+      background: url('http://pic25.nipic.com/20121117/9252150_165726249000_2.jpg') center / cover;
+    }
+
+    .bg2 {
+      height: 300px;
+      background: url('https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1534477967,3234403231&fm=27&gp=0.jpg') center / cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box show1">
+    <div class="none">
+      <p>display: none元素中子元素background-image不加载</p>
+      <img src="http://pic25.nipic.com/20121112/9252150_150552938000_2.jpg" alt="是否存在">
+      <!-- <div class="bg"></div> -->
+    </div>
+  </div>
+  <div class="box show2">
+    <div class="hide">
+      <p>visibility: hidden;元素中子元素background-image仍然加载</p>
+      <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565068818&di=93a9cffa55d28744957a81a43f7e03ff&imgtype=jpg&er=1&src=http%3A%2F%2Fpic18.nipic.com%2F20111214%2F6834314_092609528357_2.jpg" alt="是否存在">
+      <!-- <div class="bg2"></div> -->
+    </div>
+  </div>
+</body>
+
+</html>

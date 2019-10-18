@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-size: 20px;
+    }
+
+    .box {
+      width: 160px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .ws-normal {
+      white-space: normal;
+    }
+
+    .ws-pre {
+      white-space: pre;
+    }
+
+    .ws-pre-wrap {
+      white-space: pre-wrap;
+    }
+
+    .ws-pre-line {
+      white-space: pre-line;
+    }
+
+    .ws-nowrap {
+      white-space: nowrap;
+    }
+
+    .ws-break-spaces {
+      white-space: break-spaces;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="title">代码</p>
+  <pre>
+  Hi&amp;nbsp;&amp;nbsp;,
+  This   is a incomprehensibilities long word.
+  &lt;/br&gt;
+  你好&amp;nbsp;&amp;nbsp;，
+  这   是一个不可思议的长单词
+</pre>
+
+  <p class="title">white-space: normal;</p>字母语言在词内<b><i>不</i></b> 换行，CJK在句内换行
+  <div class="box ws-normal">
+    Hi&nbsp;&nbsp;,
+    This is a incomprehensibilities long word.
+    </br>
+    你好&nbsp;&nbsp;，
+    这 是一个不可思议的长单词
+  </div>
+  <p class="title">white-space: nowrap;</p>字母语言在词内<b><i>不</i></b> 换行，CJK在句内<b><i>也不</i></b> 换行；它忽略掉了除&lt;/br&gt;的其他换行，这个是保持单行最常用的方法，常常和text-overflow配合实现单行超出省略
+  <div class="box ws-nowrap">
+    Hi&nbsp;&nbsp;,
+    This is a incomprehensibilities long word.
+    </br>
+    你好&nbsp;&nbsp;，
+    这 是一个不可思议的长单词 <br>
+  </div>
+  <p class="title">white-space: pre;</p>字母语言在词内<b><i>不</i></b> 自动换行，CJK在句内<b><i>也不</i></b> 自动换行；保持原有的换行、空格、Tab、句尾空格。总体来说，是反应了代码的原本样子。
+  <div class="box ws-pre">
+    Hi&nbsp;&nbsp;,
+    This is a incomprehensibilities long word.
+    </br>
+    你好&nbsp;&nbsp;，
+    这 是一个不可思议的长单词
+  </div>
+  <p class="title">white-space: pre;</p>
+  <p class="box ws-pre">" asdfsadf sadfafdsfdsdafsafdasfasf.
+
+    sdfsdfsdfsdf.
+    是一个不可思议的长单词"</p>
+  <p class="title">white-space: pre-wrap;</p>其他同pre类似，只是会自动换行了（自动换行的能力与word-break: normal时相同，默认情况）
+  <div class="box ws-pre-wrap">
+    Hi&nbsp;&nbsp;,
+    This is a incomprehensibilitiesssssss long word.
+    </br>
+    你好&nbsp;&nbsp;，
+    这 是一个不可思议的长单词
+  </div>
+  <p class="title">white-space: pre-line;
+  </p>与pre-wrap相比，空格、Tab被压缩为1个空格，句尾的空格被删除
+  <div class="box ws-pre-line">
+    Hi&nbsp;&nbsp;,
+    This is a incomprehensibilitiesssssss long word.
+
+    sadfsdf.
+    </br>
+    你好&nbsp;&nbsp;，
+    这 是一个不可思议的长单词
+    前面有句尾空格
+  </div>
+  <p class="title">white-space: nowrap;</p>字母语言在词内<b><i>不</i></b> 换行，CJK在句内换行
+  <div class="box ws-nowrap">
+    Hi&nbsp;&nbsp;,
+    This is a incomprehensibilities long word.
+    </br>
+    你好&nbsp;&nbsp;，
+    这 是一个不可思议的长单词 <br>
+  </div>
+</body>
+
+</html>

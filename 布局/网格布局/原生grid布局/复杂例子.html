@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+      grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
+      width: 900px;
+      height: 600px;
+      margin: 0 auto;
+      border: 4px dashed black;
+      display: grid;
+      /* grid-template-columns: 200px 300px auto 200px;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      'header header header header'
+      'main main . sidebar'
+      'footer footer footer footer' */
+      grid-template: 'header header header header' auto
+      'main main . sidebar' auto
+      'footer footer footer footer' auto
+      / 200px 300px auto 200px;
+      grid-column-gap: 6px;
+      grid-row-gap: 20px;
+    }
+
+    /* .container > div {
+      width: 200px;
+    } */
+
+    .item-a {
+      background: #F89427;
+      border: 1px solid black;
+      grid-area: header;
+    }
+    .item-b {
+      background: #3DBFE6;
+      border: 1px solid black;
+      grid-area: main;
+    }
+    .item-c {
+      background: #EC7272;
+      border: 1px solid black;
+      grid-area: sidebar;
+    }
+    .item-d {
+      background: #74C576;
+      border: 1px solid black;
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item-a"></div>
+    <div class="item-b"></div>
+    <div class="item-c"></div>
+    <div class="item-d"></div>
+  </div>
+</body>
+
+</html>

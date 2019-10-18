@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      height: 2000px;
+    }
+
+    p {
+      font-family: sans-serif;
+      padding: 20px;
+      /* background properties */
+      background-color: yellow;
+      background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png);
+      background-repeat: no-repeat;
+      background-position: 99% center;
+    }
+
+    div {
+      margin-top: 20px;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .one {
+      /* background properties */
+      background-image: linear-gradient(to bottom, orange, yellow);
+    }
+
+    .two {
+      /* background properties */
+      background-image: linear-gradient(90deg, yellow, orange 40%, yellow);
+    
+    }
+
+    .three {
+      max-height: 30px;
+      background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png);
+      background-attachment: fixed;
+      overflow: auto;
+      background-size: 16px 16px;
+    }
+
+    .four {
+      max-height: 30px;
+      background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png);
+      background-attachment: local;
+      overflow: auto;
+    }
+
+    .all {
+      font-family: sans-serif;
+      padding: 20px;
+      /* background properties */
+      background-color: yellow;
+      background: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png) no-repeat 99% center,
+        linear-gradient(to bottom, yellow, #dddd00 50%, orange);
+    }
+  </style>
+</head>
+
+<body>
+  <p>Exciting box!</p>
+  <div class="one">Exciting box!</div>
+  <div class="two">Exciting box!</div>
+  <div class="all">多背景</div>
+  <div class="three">Exciting box!<br />Exciting box!<br />Exciting box!<br />Exciting box!<br />Exciting box!<br /></div>
+  <div class="four">Exciting box!<br />Exciting box!<br />Exciting box!<br />Exciting box!<br />Exciting box!<br /></div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .view1 {
+      display: flex;
+      margin: 100px;
+    }
+
+    .box {
+      /* margin: 0.5em; */
+      width: 200px;
+      height: 200px;
+      border: solid 1px;
+      background-color: palegreen;
+      transform: rotate(20deg);
+      margin-bottom: 30px;
+    }
+
+    .t1 {
+      transform: none;
+      -webkit-transform: none;
+    }
+
+    .t2 {
+      background-color: aqua;
+      opacity: 0.5;
+      position: relative;
+      left: -200px;
+      transform-origin: 20% 0;
+      -webkit-transform-origin: 20% 0;
+    }
+
+    .t3 {
+      background-color: red;
+      opacity: 0.5;
+      position: relative;
+      left: -400px;
+      transform-origin: 40% 0;
+      -webkit-transform-origin: 40% 0;
+    }
+
+    .t4 {
+      background-color: greenyellow;
+      opacity: 0.5;
+      position: relative;
+      left: -600px;
+      transform-origin: 80% 0;
+      -webkit-transform-origin: 80% 0;
+    }
+
+    .view2 {
+      display: flex;
+      margin: 100px;
+    }
+
+    .t_1 {
+      transform: none;
+      -webkit-transform: none;
+    }
+
+    .t_2 {
+      background-color: aqua;
+      opacity: 0.5;
+      position: relative;
+      left: -200px;
+      transform-origin: 0 20%;
+      -webkit-transform-origin: 0 20%;
+    }
+
+    .t_3 {
+      background-color: red;
+      opacity: 0.5;
+      position: relative;
+      left: -400px;
+      transform-origin: 0 40%;
+      -webkit-transform-origin: 0 40%;
+    }
+
+    .t_4 {
+      background-color: greenyellow;
+      opacity: 0.5;
+      position: relative;
+      left: -600px;
+      transform-origin: 0 80%;
+      -webkit-transform-origin: 0 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="view1">
+    <div class="box t1">ori</div>
+    <div class="box t2">2</div>
+    <div class="box t3">3</div>
+    <div class="box t4">4</div>
+  </div>
+  <div class="view2">
+    <div class="box t_1">ori</div>
+    <div class="box t_2">2</div>
+    <div class="box t_3">3</div>
+    <div class="box t_4">4</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      background-color: pink;
+      transition: width 1s;
+      -webkit-transition: width 1s;
+      text-align: center;
+      font: 20px/100px "宋体";
+      transition: transform 1s;
+    }
+
+    .active {
+      opacity: 1.0;
+      transform: scale(1.2) translate3d(0, 0, 0);
+    }
+
+    .inactive {
+      opacity: 0.5;
+      transform: scale(1) translate3d(0, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box inactive"></div>
+  <button id="switch">switch</button>
+
+  <script>
+    let status = false
+    document.addEventListener('DOMContentLoaded', () => {
+      let ele = document.getElementById('switch')
+      let box = document.getElementsByClassName('box')[0]
+
+      ele.addEventListener('click', function(e) {
+        status = !status
+        box.classList.remove(box.classList.item(box.classList.length - 1))
+        box.classList.add(status ? 'active' : 'inactive')
+      })
+    })
+  </script>
+</body>
+
+</html>

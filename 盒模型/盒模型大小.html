@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    p {
+      width: 1000px;
+      height: 40px;
+      font-size: 26px;
+      line-height: 40px;
+      color: initial;
+      border: 1px solid black;
+    }
+
+    .p2 {
+      box-sizing: border-box;
+      border: 6px double red;
+      padding: 10px;
+    }
+
+    .p3 {
+      box-sizing: inherit;
+      border: 6px double red;
+      padding: 10px;
+    }  
+  </style>
+</head>
+
+<body>
+  <p class="p1">Hello</p>
+  <p class="p2">有边框但设置了box-sizing: border-box</p>
+  <p class="p3">有边框</p>
+</body>
+
+</html>

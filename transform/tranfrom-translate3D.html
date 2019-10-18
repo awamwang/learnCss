@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .view1 {
+      position: relative;
+      display: flex;
+      margin: 100px;
+      margin-bottom: 400px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      border: solid 1px;
+      background-color: palegreen;
+      margin-bottom: 30px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .t1 {
+      transform: none;
+      -webkit-transform: none;
+    }
+
+    .t2 {
+      background-color: aqua;
+      opacity: 0.5;
+      transform: perspective(500px) rotateY(45deg);
+    }
+
+    .t3 {
+      background-color: red;
+      opacity: 0.5;
+      transform: perspective(500px) rotateY(-45deg);
+    }
+
+    .t_1 {
+      transform: none;
+      -webkit-transform: none;
+    }
+
+    .t_2 {
+      background-color: aqua;
+      opacity: 0.5;
+      transform: perspective(500px) translateZ(50px) rotateZ(45deg);
+    }
+
+    .t_3 {
+      background-color: red;
+      opacity: 0.2;
+      transform: perspective(500px) translateZ(100px) rotateZ(-45deg) translateX(100px);
+    }
+
+    .t_4 {
+      background-color: gold;
+      opacity: 0.2;
+      transform: perspective(500px) translateZ(100px) translateX(100px) rotateZ(-45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="view1">
+    <div class="box t1">ori</div>
+    <div class="box t2">2 45deg</div>
+    <div class="box t3">3 -45deg</div>
+  </div>
+  <div class="view1">
+    <div class="box t_1">ori</div>
+    <div class="box t_2">2 45deg</div>
+    <div class="box t_3">3 -45deg</div>
+    <div class="box t_4">4</div>
+  </div>
+</body>
+
+</html>
